@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taxco, Guerrero | Magical Town</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+    body{
+      background:#0F172A;
+      color:#E5E7EB;
+    }
+    header{
+      height:100vh;
+      background:linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url('https://t4.ftcdn.net/jpg/05/95/45/81/360_F_595458173_ZpVL2nIqsaSEhc1El5TSRNnMcAegkTOz.jpg');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+    header h1{
+      font-size:3rem;
+      margin-bottom:15px;
+      color:#F9FAFB;
+      letter-spacing:4px;
+      animation: glowMove 3s ease-in-out infinite alternate;
+      text-shadow:2px 2px 8px rgba(0,0,0,0.9), 0 0 15px rgba(199,161,74,0.7);
+    }
+
+    @keyframes glowMove{
+      from{
+        transform:translateY(0);
+        text-shadow:2px 2px 8px rgba(0,0,0,0.9), 0 0 10px rgba(199,161,74,0.5);
+      }
+      to{
+        transform:translateY(-8px);
+        text-shadow:2px 2px 12px rgba(0,0,0,1), 0 0 22px rgba(199,161,74,0.9);
+      }
+    }
+    header p{
+      font-size:1.2rem;
+      max-width:700px;
+      color:#C7A14A;
+      text-shadow:1px 1px 6px rgba(0,0,0,0.8);
+    }
+    section{
+      padding:70px 10%;
+    }
+    .info{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+    .card{
+      background:#1E293B;
+      padding:25px;
+      border-radius:15px;
+      border:1.5px solid rgba(199,161,74,0.6);
+      box-shadow:0 10px 25px rgba(0,0,0,.25);
+      transition:.3s;
+    }
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 0 25px rgba(199,161,74,0.45);
+    }
+    .card h3{
+      margin-bottom:10px;
+      color:#C7A14A;
+      text-shadow:0 0 6px rgba(199,161,74,0.6);
+    }
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+    .gallery img{
+      width:100%;
+      border-radius:15px;
+      border:2px solid rgba(199,161,74,0.6);
+      box-shadow:0 0 20px rgba(199,161,74,0.35);
+      transition:.3s;
+    }
+
+    .gallery-item{
+      text-align:center;
+    }
+
+    .gallery-item p{
+      margin-top:10px;
+      font-size:0.95rem;
+      color:#C7A14A;
+      letter-spacing:1px;
+      text-shadow:0 0 6px rgba(199,161,74,0.6);
+      opacity:0.9;
+      transition:.3s;
+    }
+
+    .gallery-item:hover p{
+      opacity:1;
+      transform:translateY(-3px);
+    }
+
+    .gallery img:hover{
+      transform:scale(1.03);
+      box-shadow:0 0 30px rgba(199,161,74,0.6);
+    }
+    .gallery img:hover{
+      transform:scale(1.03);
+      box-shadow:0 0 30px rgba(199,161,74,0.6);
+    }
+    footer{
+      background:#020617;
+      color:#E5E7EB;
+      padding:40px 10%;
+      border-top:2px solid rgba(199,161,74,0.6);
+    }
+    footer h2{
+      margin-bottom:15px;
+    }
+    footer ul{
+      list-style:none;
+      line-height:1.8;
+    }
+    footer .group{
+      margin-top:20px;
+      font-weight:600;
+    }
+    @media(max-width:600px){
+      header h1{font-size:2.2rem;}
+      header p{font-size:1rem;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>TAXCO DE ALARCÓN</h1>
+    <p>A Magical Town in the state of Guerrero, famous for its colonial architecture, cobblestone streets, and silver craftsmanship admired worldwide.</p>
+  </div>
+</header>
+
+<section>
+  <div class="info">
+    <div class="card">
+      <h3>History</h3>
+      <p>Taxco is one of the oldest towns in Mexico. It is well known for its colonial heritage and its importance as a silver mining center since the colonial era.</p>
+    </div>
+    <div class="card">
+      <h3>Silver Tradition</h3>
+      <p>Recognized worldwide for its silver jewelry, Taxco preserves this artisan tradition that attracts visitors from all over the world.</p>
+    </div>
+    <div class="card">
+      <h3>Tourism</h3>
+      <p>Main attractions include the Santa Prisca Church, the cable car, scenic viewpoints, museums, and cultural festivals.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 style="text-align:center; margin-bottom:40px;">Gallery</h2>
+  <div class="gallery">
+  <div class="gallery-item">
+    <img src="https://escapadas.mexicodesconocido.com.mx/wp-content/uploads/2020/10/taxco-de-noche-ok-1.jpg" alt="Taxco at night">
+    <p>Taxco at Night</p>
+  </div>
+
+  <div class="gallery-item">
+    <img src="https://media.istockphoto.com/id/887706592/photo/a-street-in-taxco.jpg?s=612x612&w=0&k=20&c=dwSZ7XwUrsSozCEEWlI4Jdbe9NUgQtt258oENGrOgKc=" alt="Streets of Taxco">
+    <p>Streets of Taxco</p>
+  </div>
+
+  <div class="gallery-item">
+    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/67/b9/11.jpg" alt="Taxco Cable Car">
+    <p>Taxco Cable Car</p>
+  </div>
+</div>
+</section>
+
+<footer>
+  <h2>Project Members English</h2>
+  <ul>
+    <li>Rodrigo Ramos Perez</li>
+    <li>Abigail Gutierrez Gomez</li>
+    <li>Lucas Gaspar</li>
+    <li>Isaac Sandoval</li>
+  </ul>
+  <div class="group">Group 3101</div>
+</footer>
+
+</body>
+</html>
+
